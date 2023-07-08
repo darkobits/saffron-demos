@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "@fluffykins/spline-reticulator",
+  "version": "1.2.3",
+  "type": "module",
+  "description": "Demo Saffron application.",
+  "license": "Hippocratic",
+  "author": "darkobits",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darkobits/saffron-demos/"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "spline-reticulator": "dist/bin/cli.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "nr build",
+    "build:watch": "nr build.watch",
+    "prepare": "nr prepare",
+    "help": "nr --scripts"
+  },
+  "dependencies": {
+    "@darkobits/saffron": "~0.32.12",
+    "boxen": "^7.1.1"
+  },
+  "devDependencies": {
+    "@darkobits/ts": "^0.18.8"
+  }
+}
