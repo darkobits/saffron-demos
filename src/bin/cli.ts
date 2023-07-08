@@ -25,9 +25,6 @@ cli.command({
     });
   },
   handler: ({ argv }) => {
-    // This is where we would normally call the function that implements spline
-    // reticulation, but for now let's just log the configuration we got from
-    // Saffron.
     console.log(argv);
 
     // When we are confident the CLI is working as intended, we can hand-off
